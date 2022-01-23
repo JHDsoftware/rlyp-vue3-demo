@@ -37,7 +37,7 @@ const displayImages = computed(() => {
 <template>
   <div style="display: grid;grid-template-columns: repeat(2,1fr)">
     <div class="result" style="position:relative;">
-      <n-image width="100" style="position: absolute;top:0;left: 0;" v-for="key in Object.keys(selectedImage).sort()"
+      <n-image width="300" style="position: absolute;top:0;left: 0;" v-for="key in Object.keys(selectedImage).sort()"
                :src="'./layers/'+key+'/'+selectedImage[key]"
       ></n-image>
 
